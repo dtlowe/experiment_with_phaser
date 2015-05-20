@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Monster Wants Candy demo</title>
+	<style> body { margin: 0; background: #B4D9E7; } </style>
+	<script src="phaser.js"></script>
+	<script src="js/boot.js"></script>
+	<script src="js/preloader.js"></script>
+	<!--<script src="src/MainMenu.js"></script>-->
+	<script src="js/initialize.js"></script>
+	<script stc="js/game.js"></script>
+</head>
+<body>
+<script>
+(function() {
+	// initialize the framework
+	var game = new Phaser.Game(1024, 768, Phaser.AUTO, 'game');
+	// add game states
+	game.state.add('boot', NOOHH.boot);
+	game.state.add('preloader', NOOHH.preloader);
+	//game.state.add('MainMenu', Candy.MainMenu);
+	game.state.add('initialize', NOOHH.initialize);
+	// start the Boot state
+	game.state.start('boot');
+})();
+</script>
+</body>
+</html>
