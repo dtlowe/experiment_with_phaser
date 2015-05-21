@@ -2,12 +2,17 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<title>Monster Wants Candy demo</title>
+	<title>NOOHH</title>
 	<style> body { margin: 0; background: #B4D9E7; } </style>
 	<script src="phaser.js"></script>
+	<script src="js/deckFunctions.js" type="text/javascript"></script>
+	<script src="js/handFunctions.js" type="text/javascript"></script>
+	<script src="js/playerFunctions.js" type="text/javascript"></script>
+	<script src="js/cardDecks.js" type="text/javascript"></script>
+	<script src="js/initializeGame.js" type="text/javascript"></script>
+	<script src="js/testFunctions.js" type="text/javascript"></script>
 	<script src="js/boot.js"></script>
 	<script src="js/preloader.js"></script>
-	<!--<script src="src/MainMenu.js"></script>-->
 	<script src="js/initialize.js"></script>
 	<script stc="js/game.js"></script>
 </head>
@@ -19,8 +24,8 @@
 	// add game states
 	game.state.add('boot', NOOHH.boot);
 	game.state.add('preloader', NOOHH.preloader);
-	//game.state.add('MainMenu', Candy.MainMenu);
 	game.state.add('initialize', NOOHH.initialize);
+	game.state.add('game', NOOHH.game);
 	// start the Boot state
 	game.state.start('boot');
 })();

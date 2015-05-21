@@ -1,13 +1,14 @@
-// game.js
+// game.js, where all the game functions will be stored/take place
+
 NOOHH.game = function(game){
-  this._player = null;
+  this._player1 = null;
+  this._player2 = null;
+  this._player3 = null;
+  this._player4 = null;
 };
 NOOHH.game.prototype = {
   create: function() {
     // Set the physics engine
     this.physics.startSystem(Phaser.Physics.ARCADE);
-
-    var playerHand = this.add.sprite(NOOHH.GAME_WIDTH-400, NOOHH.GAME_HEIGHT-700, 'splyBaseballBat')
-
   }
 }

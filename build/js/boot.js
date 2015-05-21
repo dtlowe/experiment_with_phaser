@@ -1,4 +1,4 @@
-// boot.js
+// boot.js, where we prepare the game environment
 
 var NOOHH = {};
 NOOHH.boot = function(game){};
